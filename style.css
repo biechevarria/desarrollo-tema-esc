@@ -1,0 +1,196 @@
+/*
+Theme Name: English Soccer Camp theme
+Author: Borja Echevarria Basáñez.
+Author URI: https://borjaechevarria.es
+Description: Plantilla desarrollada en Bootstrap paso a poso con mucho cariño
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ESC-theme, english soccer camp
+*/
+
+/*---------MENU----------*/
+
+nav.navbar{
+    background-color: #df6615 !important;
+}
+
+.navbar-brand{
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    z-index: 1;
+    float: left;
+}
+
+.navbar-nav > .menu-item:hover{background-color: rgba(0,0,0,.2);}
+
+.menu{
+    margin-right: 3%;
+}
+
+nav a{color: #ffffff;}
+
+nav li.active a,
+.current_page_item{
+    background-color: rgba(0,0,0,.2);
+    height: 100%;
+}
+
+nav li a:hover{color: #ffffff;}
+
+button.navbar-toggler{
+    margin-left: auto;
+}
+
+.menu-menu-principal-container{width: 100%; padding-left: 75%;}
+
+li{margin: 0% 2%; padding: 2% 2%;}
+
+/*-------*SUBMENUS*--------------*/
+.menu-item-has-children{position: relative;}
+.menu-item-has-children .sub-menu{position: absolute; z-index: 10; padding: 0; min-width: 120px; text-align: left;
+box-shadow: 0 3px 3px rgba(0,0,0,.5); background-color: #df6615 ; left: -8px; display: none; list-style: none;}
+.menu-item-has-children .sub-menu li{padding: 2% 4%;}
+.menu-item-has-children:hover .sub-menu{display: block;}
+.menu-item-has-children > a::after{content: '';width: 0; height: 0; border-style: solid; border-width: 5px 5px 0 5px;
+border-color: #ffffff transparent transparent transparent; position: relative; top: 13px; margin-left: 10%;}
+.menu-item-has-children .sub-menu li:hover{background-color: rgba(0,0,0,0.2);}
+
+
+
+/*----------FORMULARIOS-----------*/
+.form-control{margin-bottom: 1%;}
+.formulario-1{max-width: 100%; flex: 0 0 100%; }
+.formularioUno{padding: 0% 30%;}
+button.bg-dark{background-color: #DF6515 !important;}
+button.bg-dark:hover{background-color: #027DB3 !important;}
+.btn-primary{font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em;}
+
+/*----------BARRAS DE PROGRESION----------*/
+.bg-orange{background-color: #DF6515;}
+
+/*----------BOTOTNES DE CONTACTO-----------*/
+.btn-orange-form{background-color: #DF6515; color: #ffffff; font-weight: 600;}
+.contact-button{color: #ffffff !important;}
+.callbtn{background-color: #00bb2d; color: #ffffff; font-weight: 600;}
+
+/*----------SECCION OBJETIVO---------------*/
+#Objetivo{padding: 2% 7%;background-image: url("http://localhost/ESC-Landing/ESC-Landing/img/about-bg.jpg"); color: #ffffff;}
+.parallax{background-size: cover;background-repeat: no-repeat;background-position: center;background-attachment: fixed;}
+
+/*------------body general-------------*/
+
+/*.container{
+    margin: 0;
+    padding:0;
+    max-width: 100%;
+}*/
+
+/*--------------PAGINAS-----------*/
+h1.titulo-principal{position: absolute; z-index: 2; width: 100%;color: #fff; 
+background-color: #2d2c2c80; margin: 7% auto; padding: 0.5% 0%; max-height: 100%; font-size: 3.5rem; font-weight: 600;}
+
+.page-content{margin-bottom: 5%;}
+.page-content h2,
+.page-content h3,
+.page-content h4{margin-top: 2%; margin-bottom: 1%;}
+
+
+/*---------Wordpress Clases--------*/
+
+.alignright{float: right; margin: 20px 0px 20px 20px;}
+.alignleft{}
+
+/*-------MEDIA QUIERIES------*/
+
+@media (max-width: 2000px){
+    /*----------SLIDER---------*/
+    .slider-1 > .carousel-caption{
+        margin-bottom: 27% !important;
+    }
+    .slider-2 > .carousel-caption{
+        margin-bottom: 27% !important;
+    }
+    .slider-3 > .carousel-caption{
+        margin-bottom: 27% !important;
+    }
+
+    .slider-1> img,
+    .slider-2> img,
+    .slider-3> img{
+        width: 100% !important;
+    }
+
+    /*---------SLIDER DIVERSION------------*/
+    #Diversion{background-image: url(../ESC-theme/img/twitter-bg.jpg);}
+    #AnchoTxtDiver{margin: 0 auto; text-align: center; color: #ffffff;}
+    section#Diversion{padding: 2% 7%;}
+
+    /*-----------------BLOG----------------*/
+    h2.title-posts{font-size: 24px;}
+    h3.resume-posts{font-size: 18px;}
+    .post{width: 33.33333333%;}
+    .cont-blog{max-width: 1500px;}
+    .r-blog{margin: 0% 10%;padding: 2% 0%;}
+
+    /*----------------FOOTER--------------*/
+    footer{background-color: #DF6515;}
+    footer a{color: #ffffff; font-weight: 600;}
+}
+
+@media (max-width: 1350px){
+        /*----------SECCION OBJETIVO---------*/
+    .col-md-4{flex: 0 0 100%; max-width: 100%;}
+    section#Objetivo{padding: 2% 15%;}
+}
+
+@media (max-width: 990px){
+    nav{max-height: 600px;}
+    .navbar-brand {position: absolute;left: 10px;top: 4px;z-index: 1;float: left;}
+    #AnchoTxtDiver{margin: 0 11%;}
+
+    /*----------SECCION OBJETIVO---------*/
+    .col-md-4{flex: 0 0 100%; max-width: 100%;}
+}
+
+@media (max-width: 576px){
+    .h2-mobile{font-size: 1.563rem;text-align: center;font-weight: 600;margin-bottom: 10%;}
+    .frst-contact-btn{padding: 5% 30%;}
+    
+        /*----------SLIDER---------*/
+        .formulario-1{display: none;}
+        h1{font-size: 1.875rem;;}
+        h2{font-size: 25px;}
+        .slider-1 > .carousel-caption{
+            margin-bottom: 0% !important;
+            background-color: #3131315e;
+        }
+        .slider-2 > .carousel-caption{
+            margin-bottom: 0% !important;
+        }
+        .slider-3 > .carousel-caption{
+            margin-bottom: 0% !important;
+            background-color: #3131315e;
+        }
+
+        /*----------MENU---------*/
+        .navbar-nav{text-align: right;}
+
+        /*----------BLOG---------*/
+        .post{width: 100%;margin-bottom: 10%;}
+        .r-blog {margin: 0% 5%;padding: 6% 0%;}
+        .r-blog > h2{text-align: center; font-size: 30px; font-weight: 600;}
+        .r-blog > h3{text-align: center; font-size: 1.5rem;}
+
+        /*------------CONTACTO-----------*/
+        div.frst-contact-btn{padding: 10% 5%;}
+
+        /*------------BARRAS DINAMICAS---------*/
+        div#statbars{padding-top: 10%}
+
+        /*------------OBJETIVO---------------*/
+        #Objetivo{padding: 5% 7% 0% 7%;}
+
+
+}
